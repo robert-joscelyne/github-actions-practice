@@ -2,6 +2,8 @@ name: Deployment
 on: push
 jobs:
   Process:
+    runs:
+      using: 'node20'
     runs-on: ubuntu-latest
     steps:
       - name: Get code
